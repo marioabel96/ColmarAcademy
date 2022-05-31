@@ -1,0 +1,63 @@
+html{
+    background-color: white;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    height: 64px;
+    margin: 0 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+#colmar{
+    font-weight: bold;
+}
+
+#academy{
+    color: gray;
+}
+
+header nav{
+    display: flex;
+}
+
+header ul{
+    margin-left: 16px;
+    padding: 0;
+}
+
+.banner{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px;
+}
+
+.banner img{
+    max-width: 60%;
+}
+
+.content{
+    padding-left: 24px;
+}
+
+.button{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    margin-right: 20px;
+}
