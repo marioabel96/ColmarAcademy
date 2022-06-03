@@ -1,7 +1,13 @@
+* { 
+    box-sizing: border-box;
+}
+
 html{
     background-color: white;
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Roboto';
+    font-weight: 300;
+    box-sizing: border-box;
 }
 
 header{
@@ -14,7 +20,42 @@ header{
 
 h1{
     font-weight: bold;
+    color: rgb(74, 74, 74);
+    font-size: 50px;
 }
+
+h2{
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+    font-size: 30px;
+}
+
+h3{
+    font-weight: 500;
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+
+}
+
+p{
+    font-weight: 100;
+    color: rgb(74, 74, 74);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(74, 74, 74);
+}
+
+.button a:visited{
+    color: white;
+}
+
+@media only screen and (min-width: 481px){
+/* header */
 
 .logo{
     display: flex;
@@ -38,26 +79,235 @@ header ul{
     padding: 0;
 }
 
+/* Banner */
+
 .banner{
-    background-color: lightgray;
+    background-color: rgb(216, 216, 216);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
+}  
+
+
+.bannerimg{
+    flex-basis:  60%;
     padding: 32px 24px;
 }
 
-.banner img{
-    max-width: 60%;
+.bannerimg img{
+    width: 100%;
+}
+.content{
+    flex-basis:  40%;
 }
 
-.content{
-    padding-left: 24px;
+.learn{
+    /*padding: 32px 24px;*/
+    width:80%;
 }
 
 .button{
     text-align: center;
-    background-color: gray;
+    background-color: rgb(74, 74, 74);
     color: white;
     padding: 8px;
-    margin-right: 20px;
+    width: 100%;
+}
+
+/* Main info */
+
+.infomain{
+    display: flex;
+    
+}
+
+.intro1{
+    flex-basis: 60%;
+    padding: 32px 24px 32px 24px;
+}
+
+.intro1 img{
+    width: 100%;
+}
+
+.intro1 h2 {
+    margin-bottom: 24px;
+}
+
+
+#quoted{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 32px;
+}
+
+
+/* intro2*/
+.intro2{
+    flex-basis: 40%;
+}
+
+/* minibox*/
+
+.first{
+    margin-top: 16px;
+}
+
+.minibox{
+    display: flex;
+    padding: 16px;
+    
+}
+
+.miniimag{
+    flex-basis: 35%;
+    object-fit: cover;
+    
+}
+.miniimag img{
+    max-width: 100%;
+    flex-basis: 35%;
+    
+}
+
+.miniinfo{
+    flex-basis: 65%;
+    padding: 0  0 16px 16px;
+}
+
+.highlight{
+    background-color: rgb(216, 216, 216);
+}
+
+.readmore{
+    color: rgb(87, 152, 228);
+}
+
+/* Start learning */
+
+.start{
+    background-color: rgb(234, 235, 236);
+    padding: 0 72px 32px 72px;
+}
+
+.start h2{
+    text-align: center;
+    padding: 32px;
+    margin: 0;
+}
+
+.boxesstart{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+
+.ministart{
+    background-color: white;
+    margin: 16px;
+}
+
+.top{
+    margin-top: 0px;
+}
+
+.startimag img{
+    width: 100%;
+}
+.startinfo{
+    padding: 16px;
+}
+
+.startinfo h3, .startinfo p{
+    padding: 8px;
+    margin: 0;
+}
+
+/* Thesis exhibit*/
+
+.thesis h2{
+    padding: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.thesiscontent{
+    display: flex;
+}
+
+.vid{
+    flex-basis: 60%;
+    padding: 0 24px 32px 24px;
+}
+
+.vid video{ 
+    max-width: 100%;
+}
+.thesisinfo{
+    flex-basis: 40%;
+}
+
+.thesisbox{
+    display: flex;
+}
+
+.fisma{
+    background-color: rgb(216, 216, 216);
+}
+
+.thesisimag{
+    padding: 16px;
+    flex-basis: 35%;
+}
+
+.thesisimag img{
+    max-width: 100%;
+}
+
+.thesisminiinfo{
+    width: 60%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    color: rgb(124, 124, 124);
+    border-top: solid 1px rgb(124, 124, 124); 
+    margin: 0;
+}
+
+.mobile{
+    display: none;
+}
+
+}
+@media only screen and (max-width: 480px){
+.fullsite{
+        display: none;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mbi img{
+    max-width:100%;
+}
+
+.mobilecontent{
+    background-color: rgb(216, 216, 216);
+}
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(74, 74, 74);
+}
+
+.button a:visited{
+    color: white;
+}
+
 }
