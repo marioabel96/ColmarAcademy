@@ -281,33 +281,111 @@ footer{
     display: none;
 }
 
+
 }
 @media only screen and (max-width: 480px){
-.fullsite{
-        display: none;
+    .fullsite{
+            display: none;
+        }
+    *{
+        margin: 0;
+        padding: 0;
     }
-*{
-    margin: 0;
-    padding: 0;
-}
 
-.mbi img{
-    max-width:100%;
-}
+    /* Learn Something*/
+    .mbi img{
+        max-width:100%;
+    }
 
-.mobilecontent{
-    background-color: rgb(216, 216, 216);
-}
-a{
-    text-decoration: none;
-}
+    .mobilecontent{
+        background-color: rgb(216, 216, 216);
+        padding: 16px;
+    }
 
-a:visited{
-    color: rgb(74, 74, 74);
-}
+    .mobilecontent h1{
+        margin-bottom: 32px;
+    }
 
-.button a:visited{
-    color: white;
-}
+    .mobilebanner{
+        background-color: rgb(216, 216, 216) ;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .button{
+        text-align: center;
+        background-color: rgb(155, 155, 155);
+        font-weight: bold;
+        padding: 12px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    a:visited{
+        color: rgb(74, 74, 74);
+    }
+
+    .button a:visited{
+        color: white;
+    }
+
+    /*info part*/
+    .minibox{
+        padding: 16px;
+    }
+
+    .miniimag img{
+        width: 100%;
+    }
+
+    .miniinfo{
+        padding: 16px;
+    }
+
+    .miniinfo h3, p{
+        margin-bottom: 8px;
+    }
+    .readmore{
+        color: rgb(87, 152, 228);
+    }
+
+
+    /*start learning*/
+    .start{
+        border: rgba(155, 155, 155, .2) solid 1px;
+        padding: 32px 16px ;
+    }
+
+    .start h2{
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .course{
+        background-color: rgb(216, 216, 216) ;
+        padding: 16px 16px 24px;
+        margin-bottom: 8px;
+    }
+
+    /*thesis exhibit*/
+    .thesis{
+        padding: 32px 0px 24px;
+        text-align: center;
+    }
+    
+    .thesis h2{
+        margin-bottom: 16px;
+    }
+
+    video{
+        max-width: 100%;
+    }
+
+
+    /* footer */
+    footer{
+        padding: 16px;
+    }
 
 }
